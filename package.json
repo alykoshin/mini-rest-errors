@@ -1,6 +1,6 @@
 {
   "name": "mini-rest-errors",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Error objects for mini-rest project",
   "main": "./index.js",
   "engines": {
@@ -47,6 +47,5 @@
   "dependencies": {
     "require-dir-all": "^0.4.5"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
