@@ -10,6 +10,7 @@ var HTTPError = require('../').HTTPError;
 var util = require('util');
 
 
+console.log('*******************************************************************');
 console.log('\n* HTTPError Example 1\n');
 
 var httpError = new HTTPError(400);
@@ -17,6 +18,7 @@ console.log('httpError:', httpError);
 console.log('httpError.stack:', httpError.stack);
 
 
+console.log('*******************************************************************');
 console.log('\n* HTTPError Example 2\n');
 
 var httpError = new HTTPError(400, 'This message overrides default');
@@ -24,6 +26,7 @@ console.log('httpError:', httpError);
 console.log('httpError.stack:', httpError.stack);
 
 
+console.log('*******************************************************************');
 console.log('\n* AppError Example 1\n');
 
 var appError = new AppError('notImplemented');
@@ -31,6 +34,7 @@ console.log('appError:', appError);
 console.log('appError.stack:', appError.stack);
 
 
+console.log('*******************************************************************');
 console.log('\n* AppError Example 2\n');
 
 var appError = new AppError('notImplemented', 'more data');
@@ -38,6 +42,7 @@ console.log('appError:', appError);
 console.log('appError.stack:', appError.stack);
 
 
+console.log('*******************************************************************');
 console.log('\n* AppError Example 3\n');
 
 appErrors.newAppError = {
@@ -58,3 +63,15 @@ console.log('appError.toString():', appError.toString());
 console.log('\'\'+appError:', '' + appError);
 console.log('appError.stack:', appError.stack);
 
+
+appErrors.newAppError2 = {
+  id: 12345,
+  status: 500,
+  message: 'newAppError2 Message'
+};
+
+console.log('*******************************************************************');
+console.log('\n* AppError Example 34 (id field)\n');
+
+var appError2 = new AppError('newAppError2', 'more data');
+console.log('appError2:', appError2);
