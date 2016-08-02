@@ -1,6 +1,6 @@
 {
   "name": "mini-rest-errors",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Error objects for mini-rest project",
   "main": "./index.js",
   "engines": {
