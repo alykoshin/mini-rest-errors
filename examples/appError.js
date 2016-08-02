@@ -60,7 +60,12 @@ AppError.errors({
 });
 
 console.log('*******************************************************************');
-console.log('\n* AppError Example 34 (id field)\n');
+console.log('\n* AppError Example 2 (id field)\n');
 
 var appError2 = new AppError('newAppError2', 'more data');
 console.log('appError2:', appError2);
+
+console.log('*******************************************************************');
+process.env.NODE_ENV = 'development';
+console.log('Expecting stack output for when process.env.NODE_ENV === \'development\'')
+console.log('appError2.toString():' + appError2.toString());
