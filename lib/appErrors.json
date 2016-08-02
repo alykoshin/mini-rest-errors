@@ -1,0 +1,22 @@
+{
+  "_description": [
+    "This file defines default AppErrors. If `message` value is not set, ",
+    "it uses `HTTPError` `message` value corresponding to `status` code"
+  ],
+  "unknownError": {
+    "id": 1,
+    "status":  500
+  },
+  "notImplemented": {
+    "id": 2,
+    "status":  500
+  },
+  "badRequest": {
+    "id": 3,
+    "status": 400
+  },
+  "pageNotFound": {
+    "id": 4,
+    "status":  404
+  }
+}
