@@ -4,6 +4,7 @@ node_js:
   - "5"
   - "6"
   - "stable"
+  - "latest"
   - "iojs"
 before_install:
 script: "npm run-script test-travis"
