@@ -1,11 +1,11 @@
 {
-
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
   "ecmaFeatures": {
     "globalReturn": true
   },
-
   "env": {
     "es6": true
   }
-
 }
