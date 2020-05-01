@@ -29,7 +29,9 @@
     "patch-release": "npm test && npm run _patch-release && npm run _push",
     "minor-release": "npm test && npm run _minor-release && npm run _push",
     "__major-release": "npm test && npm run _major-release && npm run _push",
-    "coverall": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "coverall": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "error,rest,constructor,throw,http,express"
@@ -46,11 +48,13 @@
   "homepage": "https://github.com/alykoshin/mini-rest-errors",
   "dependencies": {
     "lodash": "^4.17.4",
-    "require-dir-all": "^0.4.11"
+    "require-dir-all": "^0.4.11",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "istanbul": "^0.4.5",
     "mocha": "^3.2.0"
-  }
+  },
+  "snyk": true
 }
